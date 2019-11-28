@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Site Title -->
+<script type="text/javascript">var publication_date = "December 20, 2018";</script>
+<script type="text/javascript">var blog_title = "Online Encryption and Decryption";</script>
+<script type="text/javascript" src="js/blog_head.js"></script>
+<link rel="stylesheet" href="stylesheets/crypto.css">
+<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+<link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Main JavaScript -->
+<!-- Crypto Libraries -->
+
+</head>
+
+<body>
+<script type="text/javascript" src="js/blog_header.js"></script>
+
+<script type="text/javascript">
+
+
+function submitForm() {
+
+    var a1 = document.querySelector('input[name="q1"]:checked').value;
+    var a2 = document.querySelector('input[name="q2"]:checked').value;
+    var c1 = Number(a1) + Number(a2)
+    var a3 = document.querySelector('input[name="q3"]:checked').value;
+    var a4 = document.querySelector('input[name="q4"]:checked').value;
+    var c2 = Number(a3) + Number(a4)
+    var res = '';
+    if (c1 > c2){
+      res = 'Fuck';
+    }
+    else{
+      res = 'open';
+    }
+
+    document.getElementById("d").textContent  = res;
+    
+    return false;
+
+
+
+    }
+
+</script>
+
+
+
+<div id="main_content_wrap" class="outer">
+    <section id="main_content" class="inner">
+      
+
+
+      <FORM >
+
+        <H3>Please tell us a little about yourself. </H3>
+        
+        
+        
+        <P>
+        
+        <TABLE BORDER>
+        
+        <TR ALIGN=CENTER>
+        <TD WIDTH=75> </TD>
+        <TD WIDTH=75><B>Strongly<br>agree</B></TD>
+        <TD WIDTH=75><B>Agree</B></TD>
+        <TD WIDTH=75><B>Neither<br>agree<br>nor<br>disagree</B></TD>
+        <TD WIDTH=75><B>Disagree</B></TD>
+        <TD WIDTH=75><B>Strongly<br>disagree</B></TD>
+        </TR>
+        
+        <TR ALIGN=CENTER>
+        <TD  ALIGN=LEFT>
+          The work is very stimulating.</TD>
+        <TD><INPUT TYPE="RADIO" NAME="q1" VALUE="1"></TD>
+        <TD><INPUT TYPE="RADIO" NAME="q1" VALUE="2"></TD>
+        <TD><INPUT TYPE="RADIO" NAME="q1" VALUE="3"></TD>
+        <TD><INPUT TYPE="RADIO" NAME="q1" VALUE="4"></TD>
+        <TD><INPUT TYPE="RADIO" NAME="q1" VALUE="5"></TD>
+        </TR>
+        
+        <TR ALIGN=CENTER>
+        <TD  ALIGN=LEFT>
+          I have a lot of freedom at work.</TD>
+        <TD><INPUT TYPE="RADIO" NAME="q2" VALUE="1"></TD>
+        <TD><INPUT TYPE="RADIO" NAME="q2" VALUE="2"></TD>
+        <TD><INPUT TYPE="RADIO" NAME="q2" VALUE="3"></TD>
+        <TD><INPUT TYPE="RADIO" NAME="q2" VALUE="4"></TD>
+        <TD><INPUT TYPE="RADIO" NAME="q2" VALUE="5"></TD>
+        </TR>
+        
+        <TR ALIGN=CENTER>
+        <TD  ALIGN=LEFT>
+           My supervisor is very demanding of high quality.</TD>
+        <TD><INPUT TYPE="RADIO" NAME="q3" VALUE="1"></TD>
+        <TD><INPUT TYPE="RADIO" NAME="q3" VALUE="2"></TD>
+        <TD><INPUT TYPE="RADIO" NAME="q3" VALUE="3"></TD>
+        <TD><INPUT TYPE="RADIO" NAME="q3" VALUE="4"></TD>
+        <TD><INPUT TYPE="RADIO" NAME="q3" VALUE="5"></TD>
+        </TR>
+        
+        <TR ALIGN=CENTER>
+        <TD  ALIGN=LEFT>
+        The work environment is conducive to creative thinking.</TD>
+        <TD><INPUT TYPE="RADIO" NAME="q4" VALUE="1"></TD>
+        <TD><INPUT TYPE="RADIO" NAME="q4" VALUE="2"></TD>
+        <TD><INPUT TYPE="RADIO" NAME="q4" VALUE="3"></TD>
+        <TD><INPUT TYPE="RADIO" NAME="q4" VALUE="4"></TD>
+        <TD><INPUT TYPE="RADIO" NAME="q4" VALUE="5"></TD>
+        </TR>
+        
+        </TABLE>
+        
+     
+        <input type="submit" onclick="submitForm()" value="submit" />
+        <div>
+        <button onclick="submitForm();">Download</button>
+      </div>
+
+
+        <HR>
+        
+        </FORM>
+        <div id='d'>
+
+          <span>hello</span>
+        </div>
+
+    </div>
+    
+  </section>
+  <div id='d'></div>
+
+</div>
+<script type="text/javascript" src="js/blog_footer.js"></script>
+</body>
+</html>

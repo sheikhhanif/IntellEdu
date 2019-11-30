@@ -9,7 +9,6 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn import metrics
-
 student_names = ["Amirul", "Asraf", "Izzati", "Noor", "Safiyah", "Leo", 
                  "Yang", "Hao", "Fuu", "Ryan", "Anuradha", "Lutfi", "Lazim",
                  "Aminah", "Shahrukh", "Subramaniam", "Ahmad", "Hanif", "Mior",
@@ -33,15 +32,6 @@ def predict_academic_path():
     
 
 predict_academic_path()
-
-
-# In[34]:
-
-
-len(student_names)
-
-
-# In[ ]:
 
 
 
